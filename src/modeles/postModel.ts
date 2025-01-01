@@ -1,5 +1,5 @@
 import mongoose, { Schema, Document, Model } from "mongoose";
-import { CommentDocument, commentSchema } from "./commentModeles";
+import { CommentDocument, commentSchema } from "./commentModel";
 
 // Define the Post interface
 export interface PostDocument extends Document {
