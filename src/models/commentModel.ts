@@ -29,10 +29,6 @@ const commentSchema = new Schema<CommentDocument>(
 );
 
 // Define the Comment model
-export const CommentModel: Model<CommentDocument> = mongoose.model<CommentDocument>(
-  "comments",
-  commentSchema
-);
+const commentsModel = mongoose.model<CommentDocument>("Comments", commentSchema);
 
-
-export { commentSchema };
+export default commentsModel;
